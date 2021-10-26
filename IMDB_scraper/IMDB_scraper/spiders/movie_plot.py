@@ -10,10 +10,9 @@ from plotly.io import write_html
 df_plot = df_recommend.head(10)
 
 
-Then, we create the scatterplot with the dataframe `df_plot`. The `color` depends on the `number of shared actors`.
+# Then, we create the scatterplot with the dataframe `df_plot`. The `color` depends on the `number of shared actors`.
 
 
-python
 fig = px.scatter(df_plot,
                  x = "movie_or_TV_name",
                  y = "number of shared actors", 
